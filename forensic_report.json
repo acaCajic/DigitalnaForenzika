@@ -1,0 +1,144 @@
+{
+    "extracted_credentials": [
+        {
+            "file_name": "basic_auth.pcapng",
+            "method": "GET",
+            "host": "127.0.0.1:8080",
+            "uri": "/",
+            "auth_type": "Basic",
+            "username": "nikola",
+            "password": "nizda123"
+        },
+        {
+            "file_name": "basic_auth.pcapng",
+            "method": "GET",
+            "host": "127.0.0.1:8080",
+            "uri": "/favicon.ico",
+            "auth_type": "Basic",
+            "username": "nikola",
+            "password": "nizda123"
+        },
+        {
+            "file_name": "bearer_auth.pcapng",
+            "source": "Authorization header",
+            "auth_type": "Bearer",
+            "method": "GET",
+            "host": "localhost:5000",
+            "uri": "/api/data",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJuaWtvbGEiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNjAwMDAwMCwiZXhwIjoxNzE2MDAzNjAwfQ.r4cC2Yc4l9T7Qh9A6QJ1z4pJm0fY0PZ9G0Qe1h0xkA4"
+        },
+        {
+            "file_name": "cookies.pcapng",
+            "method": "POST",
+            "host": "localhost:5000",
+            "uri": "/login",
+            "content_type": "application/x-www-form-urlencoded",
+            "form_data": {
+                "username": [
+                    "nikola"
+                ],
+                "password": [
+                    "nidza123"
+                ]
+            }
+        },
+        {
+            "file_name": "cookies.pcapng",
+            "method": "GET",
+            "host": "localhost:5000",
+            "uri": "/profile",
+            "cookies": [
+                {
+                    "name": "JSESSIONID",
+                    "value": "A9C4F8D23B1E9F77A1C9B3D8",
+                    "direction": "request"
+                }
+            ]
+        },
+        {
+            "file_name": "form.pcapng",
+            "method": "POST",
+            "host": "localhost:8081",
+            "uri": "/upload",
+            "content_type": "multipart/form-data; boundary=----WebKitFormBoundaryODow1CIFqNOymrjQ",
+            "form_data": {
+                "mat_broj_parcele": "2345846",
+                "katastarska_opstina": "Titel",
+                "broj_parcele": "123",
+                "povrsina": "4",
+                "klasa_zemljista": "5",
+                "cena": "5000",
+                "id": "2",
+                "godineIznamljivanja": "19.03.2024"
+            }
+        },
+        {
+            "file_name": "get.pcapng",
+            "method": "GET",
+            "host": "localhost:8000",
+            "uri": "/?userName=Marko&password=Mare",
+            "form_data": {
+                "userName": [
+                    "Marko"
+                ],
+                "password": [
+                    "Mare"
+                ]
+            }
+        },
+        {
+            "file_name": "snimljen_saobracaj.pcapng",
+            "method": "POST",
+            "host": "testphp.vulnweb.com",
+            "uri": "/userinfo.php",
+            "content_type": "application/x-www-form-urlencoded",
+            "form_data": {
+                "uname": [
+                    "marko"
+                ],
+                "pass": [
+                    "1234"
+                ]
+            }
+        },
+        {
+            "file_name": "test12.pcapng",
+            "method": "POST",
+            "host": "localhost:8081",
+            "uri": "/signup",
+            "content_type": "application/json",
+            "form_data": {
+                "name": [
+                    "milos"
+                ],
+                "email": [
+                    "milos1@gmail.com"
+                ],
+                "password": [
+                    "Milos@!123"
+                ],
+                "prezime": [
+                    "bogdanovic"
+                ],
+                "userName": [
+                    "misko"
+                ]
+            }
+        },
+        {
+            "file_name": "test123.pcapng",
+            "method": "POST",
+            "host": "localhost:8081",
+            "uri": "/login",
+            "content_type": "application/json",
+            "form_data": {
+                "email": [
+                    "aca@gmail.com"
+                ],
+                "password": [
+                    "Aca@!123"
+                ]
+            }
+        }
+    ]
+}
